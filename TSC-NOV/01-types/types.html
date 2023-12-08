@@ -8,8 +8,33 @@
 <body>
     <h1>01-types</h1>
 
+    <!--
+        Ohne Parameter (Standardverhalten):
+        <script src="/TSC-NOV/01-types/js/types.js"></script>
 
+        Das Skript wird sofort heruntergeladen und ausgeführt, und das Parsen des HTML wird
+        unterbrochen, bis das Skript vollständig ausgeführt ist.
+
+        -> Verschiedene Teile des Codes (JS) können daher fehlen
+    -->
+    <!-- Mit 'Defer'-->
     <script src="/TSC-NOV/01-types/js/types.js" defer></script>
+    <!--
+        Das Skript parallel zum Parsen des HTML´s heruntergeladen, aber die
+        Ausführung wird bis zum Ende des Parsens des HTML-Dokuments verschoben
+    -->
+
+    <!--
+        Mit 'async'
+        <script src="/TSC-NOV/01-types/js/types.js" async></script>
+    
+        Das Skript wird parallel zum Parsen des HTML´s heruntergeladen und die 
+        Auführung erfolgt, sobald das Skript fertig heruntergeladen wurde, ohne auf
+        das Ende des Parsens des HTML-Dokumentes zu warten. Wird asynchron geladen.
+
+        -> Verschiedene Teile des Codes (JS) können daher fehlen
+    -->
+
     
     <h2>Übung</h2>
 
